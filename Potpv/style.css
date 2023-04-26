@@ -29,12 +29,12 @@
 }
 
 .header__logo {
-    width: 184px;
+    width: 187px;
     height: 60px;
 }
 
 .logo {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
@@ -48,41 +48,51 @@
 }
 
 .logo__title {
-    width: 184px;
-    height: 35px;
+    margin: 0;
     font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
     font-size: 32px;
-    color: #F1CDB3;
     line-height: 110%;
     display: flex;
     align-items: center;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
 }
 
 .logo__slogan {
-    width: 179px;
-    height: 15px;
     font-family: Arial;
     font-size: 13px;
+    font-weight: 400;
     line-height: 15px;
     color: #FFFFFF;
     display: flex;
     align-items: center;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.1em;
 }
 
 .nav {
     width: 443px;
     height: 27px;
     display: inline-flex;
-    justify-content: space-between;
 }
 
-.nav__item {
+.nav__item-link {
+    width: 100%;
+    height: 100%;
     font-family: Arial;
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
+}
+
+.nav__item-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__item_selected {
@@ -90,22 +100,25 @@
     border-bottom: 3px solid #F1CDB3;
 }
 
-.nav__item:link,
-.nav__item:visited,
-.nav__item:active,
-.nav__item:hover {
+.nav__item-link:link,
+.nav__item-link:visited,
+.nav__item-link:active,
+.nav__item-link:hover {
     text-decoration: none;
 }
 
-.start-screen__introduction {
+.start-screen__not-only {
     width: 1200px;
     height: 728px;
     margin: 0 40px;
+}
+
+.not-only {
     display: flex;
     justify-content: space-between;
 }
 
-.start-screen__content {
+.not-only__content {
     width: 460px;
     height: 322px;
     position: relative;
@@ -115,7 +128,7 @@
     align-content: space-between;
 }
 
-.start-screen__content-header {
+.not-only__content-header {
     width: 310px;
     height: 114px;
     font-family: Georgia;
@@ -126,10 +139,12 @@
     margin: 0;
 }
 
-.start-screen__content-description {
+.not-only__content-description {
     width: 460px;
     height: 72px;
+    margin: 0;
     font-family: Arial;
+    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
@@ -138,10 +153,10 @@
     align-items: center;
 }
 
-.start-screen__content-button {
+.not-only__content-button {
+    border: 0;
     border-radius: 100px;
     background-color: #F1CDB3;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,7 +164,7 @@
     gap: 10px;
 }
 
-.start-screen__content-button-text {
+.not-only__content-button-text {
     font-family: Georgia;
     font-weight: 400;
     font-size: 17px;
@@ -162,4 +177,66 @@
     flex-grow: 0;
 }
 
-.start-screen__dog-image {}
+.page__about {
+    width: 1280px;
+    height: 588;
+}
+
+.about {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+
+.about__content-wrapper {
+    width: 1200px;
+    height: 408px;
+    position: relative;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__pets-img {
+    margin-left: 175px;
+}
+
+.about__content {
+    width: 430px;
+    height: 380px;
+    margin-right: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.about__content-header {
+    width: 370px;
+    height: 90px;
+    margin: 0;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+}
+
+.about__content-description {
+    width: 100%;
+    margin: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+
+    display: flex;
+    align-items: center;
+}
