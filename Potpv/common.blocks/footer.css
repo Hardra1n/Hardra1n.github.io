@@ -1,0 +1,138 @@
+.footer {
+    background-image: url('images/footer-background.png');
+    background: url('images/footer-gradient-background.png'),
+        radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
+        #211F20;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__content {
+    margin-top: 40px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__contacts-info,
+.footer__location-info {
+    margin-top: 16px;
+}
+
+.contacts-info {
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts-info__header {
+    margin: 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+}
+
+.contacts-info__mail,
+.contacts-info__phone {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-info__mail-address,
+.contacts-info__phone-number {
+    margin: 0;
+    /* change to gap */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+
+    letter-spacing: 0.06em;
+
+    color: #F1CDB3;
+}
+
+
+
+.location-info {
+    height: 234px;
+    width: 302px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.location-info__header {
+    margin: 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+
+    letter-spacing: 0.06em;
+
+
+    color: #FFFFFF;
+}
+
+.location-info__location-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.location-info__location-link {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+
+.location-info__address {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* or 23px */
+
+    letter-spacing: 0.06em;
+
+    /* color-primary */
+
+    color: #F1CDB3;
+
+    display: flex;
+    align-items: center;
+}
+
+.contacts-info__phone-helping-image,
+.contacts-info__mail-helping-image {
+    margin-right: 20px;
+}
+
+.location-info__helping-image {
+    width: 22px;
+    height: 32px;
+}
+
+.contacts-info__mail:hover .contacts-info__mail-address,
+.contacts-info__phone:hover .contacts-info__phone-number,
+.location-info__location-link:hover .location-info__address {
+    color: #FDDCC4;
+}

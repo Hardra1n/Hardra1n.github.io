@@ -1,0 +1,79 @@
+.help {
+    background-color: #FFFFFF;
+}
+
+.help__content-wrapper {
+    width: 1200px;
+    height: 431px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help__content-header {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
+    color: #545454;
+}
+
+.help__help-list {
+    /* maybe remove? */
+    width: 1026px;
+    height: 281px;
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0px;
+
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    column-gap: 119px;
+    justify-content: center;
+}
+
+.help__topic {
+    height: 113px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help__topic-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
+    color: #545454;
+}
+
+.help__topic-avatar {
+    max-height: 60px;
+    max-width: 60px;
+}

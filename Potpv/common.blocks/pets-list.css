@@ -1,0 +1,50 @@
+@import url('../common.blocks/pet-card.css');
+
+.pets-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pets-list__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.pets-list__button-arrow {
+    /* button_arrow */
+
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px 19px;
+
+    /* color-primary */
+
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: #F6F6F6;
+
+    /* pointer events */
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.pets-list__button-arrow:hover {
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
+}
+
+.pets-list__button-arrow_reversed {
+    -webkit-transform: scaleX(-1);
+}

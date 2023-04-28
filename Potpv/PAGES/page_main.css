@@ -1,0 +1,44 @@
+@import url("../default.css");
+@import url('../common.blocks/start-screen.css');
+@import url('../common.blocks/about.css');
+@import url('../common.blocks/pets.css');
+@import url('../common.blocks/help.css');
+@import url('../common.blocks/donation.css');
+@import url('../common.blocks/footer.css');
+
+
+.page {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page__about {
+    width: 100%;
+    height: 588px;
+}
+
+.page__pets {
+    height: 877px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page__help {
+    width: 100%;
+    height: 611px;
+    display: flex;
+    justify-content: center;
+}
+
+.page__donation {
+    width: 100%;
+    height: 462px;
+}
+
+.page__footer {
+    width: 100%;
+    height: 350px;
+}

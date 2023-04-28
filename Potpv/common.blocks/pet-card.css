@@ -1,0 +1,62 @@
+.pet-card {
+    height: 100%;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAFAFA;
+
+    /* interactable */
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.pet-card:hover {
+    background-color: #FFFFFF;
+}
+
+.pet-card__title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    display: flex;
+    justify-content: center;
+}
+
+.pet-card__pet-button {
+    box-sizing: border-box;
+    padding: 14px 44px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: #FAFAFA;
+    display: flex;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.pet-card:hover .pet-card__pet-button {
+    background-color: #F1CDB3;
+}
+
+.pet-card__pet-button-text {
+    padding: 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+
+    letter-spacing: 0.06em;
+
+    color: #292929;
+}

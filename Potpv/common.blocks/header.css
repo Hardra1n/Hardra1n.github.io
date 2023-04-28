@@ -1,0 +1,13 @@
+@import url("../common.blocks/logo.css");
+@import url("../common.blocks/nav.css");
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 187px;
+    height: 60px;
+}

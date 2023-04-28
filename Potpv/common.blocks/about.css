@@ -1,0 +1,60 @@
+.about {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+
+.about__content-wrapper {
+    width: 1200px;
+    height: 408px;
+    position: relative;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__pets-img {
+    margin-left: 175px;
+}
+
+.about__content {
+    width: 430px;
+    height: 380px;
+    margin-right: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.about__content-header {
+    width: 370px;
+    height: 90px;
+    margin: 0;
+    color: #545454;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+}
+
+.about__content-description {
+    width: 100%;
+    margin: 0;
+    color: #4C4C4C;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+
+    display: flex;
+    align-items: center;
+}

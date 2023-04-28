@@ -1,0 +1,118 @@
+.donation {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+}
+
+.donation__content-wrapper {
+    width: 915px;
+    height: 282px;
+
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donation__content-image {
+    width: 505px;
+    height: 261px;
+}
+
+.donation__content {
+    width: 380px;
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.donation__content-header {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+    color: #545454;
+}
+
+.donation__content-subheading {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
+    color: #545454;
+}
+
+.donation__content-description {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    /* color-dark-m */
+
+    color: #B2B2B2;
+}
+
+.donation__link {
+    display: flex;
+    column-gap: 15px;
+}
+
+.donation__credit-card {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 15px;
+    width: fit-content;
+    border: none;
+    /* color-primary */
+
+    background-color: #F1CDB3;
+    border-radius: 9px;
+
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.donation__credit-card:hover {
+    background-color: #FDDCC4;
+}
+
+.donation__credit-card-number {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
+    color: #545454;
+}
