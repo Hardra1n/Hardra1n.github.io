@@ -7,8 +7,158 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
-<body>
-
+<body class="page">
+    <div class="page__header-container">
+        <header class="header page__header">
+            <a href="" class="logo header__logo logo_bg_white">
+                <h1 class="logo__title">Cozy House</h1>
+                <span class="logo__slogan">Shelter for pets in Boston</span>
+            </a>
+            <nav class="nav header__nav nav_bg_white">
+                <ul class="nav__item-wrapper">
+                    <li class="nav__item"><a class="nav__item-link" href="main.html">About the shelter</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__item-link nav__item_selected" href="#">Our pets</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="main.html#help">Help the shelter</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="#footer">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main class="pets page__pets">
+        <div class="pets__content">
+            <h2 class="pets__header">Our friends who <br> are looking for a house</h2>
+            <div class="pets__pets-list">
+                <ul class="pets-list__wrapper">
+                    <li class="pets-list__list-item">
+                        <div class="pet-card pets-list__pet-card">
+                            <img class="pet-card__pet-avatar" src="images/pets/pets-katrine.png"
+                                alt="Black cat Katrine">
+                            <span class="pet-card__title">Katrine</span>
+                            <button class="pet-card__pet-button">
+                                <span class="pet-card__pet-button-text">Learn more</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="pets-list__list-item">
+                        <div class="pet-card pets-list__pet-card">
+                            <img class="pet-card__pet-avatar" src="images/pets/pets-jennifer.png"
+                                alt="White dog Jennifer">
+                            <span class="pet-card__title">Jennifer</span>
+                            <button class="pet-card__pet-button">
+                                <span class="pet-card__pet-button-text">Learn more</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="pets-list__list-item">
+                        <div class="pet-card pets-list__pet-card">
+                            <img class="pet-card__pet-avatar" src="images/pets/pets-woody.png"
+                                alt="Light-brown dog Woody">
+                            <span class="pet-card__title">Woody</span>
+                            <button class="pet-card__pet-button">
+                                <span class="pet-card__pet-button-text">Learn more</span>
+                            </button>
+                        </div>
+                    </li>
+                    <!--  -->
+                    <li class="pets-list__list-item">
+                        <div class="pet-card pets-list__pet-card">
+                            <img class="pet-card__pet-avatar" src="images/pets/pets-sophia.png"
+                                alt="Light-brown dog Woody">
+                            <span class="pet-card__title">Sophia</span>
+                            <button class="pet-card__pet-button">
+                                <span class="pet-card__pet-button-text">Learn more</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="pets-list__list-item">
+                        <div class="pet-card pets-list__pet-card">
+                            <img class="pet-card__pet-avatar" src="images/pets/pets-timmy.png"
+                                alt="Light-brown dog Woody">
+                            <span class="pet-card__title">Timmy</span>
+                            <button class="pet-card__pet-button">
+                                <span class="pet-card__pet-button-text">Learn more</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="pets-list__list-item">
+                        <div class="pet-card pets-list__pet-card">
+                            <img class="pet-card__pet-avatar" src="images/pets/pets-charly.png"
+                                alt="Light-brown dog Woody">
+                            <span class="pet-card__title">Charly</span>
+                            <button class="pet-card__pet-button">
+                                <span class="pet-card__pet-button-text">Learn more</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="pets-list__list-item">
+                        <div class="pet-card pets-list__pet-card">
+                            <img class="pet-card__pet-avatar" src="images/pets/pets-scarlet.png"
+                                alt="Light-brown dog Woody">
+                            <span class="pet-card__title">Scarlett</span>
+                            <button class="pet-card__pet-button">
+                                <span class="pet-card__pet-button-text">Learn more</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="pets-list__list-item">
+                        <div class="pet-card pets-list__pet-card">
+                            <img class="pet-card__pet-avatar" src="images/pets/pets-freddie.png"
+                                alt="Light-brown dog Woody">
+                            <span class="pet-card__title">Freddie</span>
+                            <button class="pet-card__pet-button">
+                                <span class="pet-card__pet-button-text">Learn more</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="pets__navigation">
+                <button class="pets__navigation-paginator pets__navigation-paginator_disabled">&lt;&lt;</button>
+                <button class="pets__navigation-paginator pets__navigation-paginator_disabled">&lt;</button>
+                <button class="pets__navigation-paginator pets__navigator-paginator_active">1</button>
+                <button class="pets__navigation-paginator">&gt;</button>
+                <button class="pets__navigation-paginator">&gt;&gt;</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer page__footer" id="footer">
+        <div class="footer__content">
+            <div class="contacts-info footer__contacts-info">
+                <h3 class="contacts-info__header">For questions <br> and suggestions</h3>
+                <a class="contacts-info__mail" href="mailto:email@shelter.com" target="_blank">
+                    <img class="contacts-info__mail-helping-image" src="images/mail.png" alt="Better then modern one">
+                    <span class="contacts-info__mail-address">email@shelter.com</span>
+                </a>
+                <a class="contacts-info__phone" href="tel:+136745677554">
+                    <img class="contacts-info__phone-helping-image" src="images/phone.png"
+                        alt="Radiophysics faculty's modern devices">
+                    <span class="contacts-info__phone-number">+13 674 567 75 54</span>
+                </a>
+            </div>
+            <div class="location-info footer__location-info">
+                <h3 class="location-info__header">We are waiting for your visit</h3>
+                <ul class="location-info__location-list">
+                    <li class="location-info__location">
+                        <a class="location-info__location-link" href="https://www.google.com/maps/place/hue+city"
+                            target="_blank">
+                            <img class="location-info__helping-image" src="images/pin.png" alt="For adults only">
+                            <span class="location-info__address">1 Central Street, Boston (entrance from the
+                                store)</span>
+                        </a>
+                    </li>
+                    <li class="location-info__location">
+                        <a class="location-info__location-link" href="https://www.google.com/maps/place/hue+city"
+                            target="_blank">
+                            <img class="location-info__helping-image" src="images/pin.png" alt="For adults only">
+                            <span class="location-info__address">18 South Park, London</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <img class="footer__dog-image" src="images/footer-puppy.png" alt="Puppy wanna get hi-fi">
+        </div>
+    </footer>
 </body>
 
 </html>

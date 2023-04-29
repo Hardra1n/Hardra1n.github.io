@@ -22,8 +22,6 @@
 .page__pets {
     height: 877px;
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .page__help {

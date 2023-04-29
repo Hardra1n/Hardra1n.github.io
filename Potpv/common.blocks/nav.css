@@ -4,6 +4,15 @@
     display: inline-flex;
 }
 
+.nav__item-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .nav__item-link {
     width: 100%;
     height: 100%;
@@ -17,18 +26,21 @@
     color: #FAFAFA;
 }
 
-.nav__item-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .nav__item_selected {
     color: #FAFAFA;
     padding-bottom: 2px;
     border-bottom: 3px solid #F1CDB3;
     pointer-events: none;
+}
+
+.nav_bg_white .nav__item-link {
+    color: #545454
+}
+
+.nav_bg_white .nav__item-link:hover {
+    color: #292929
+}
+
+.nav_bg_white .nav__item_selected {
+    color: #292929;
 }

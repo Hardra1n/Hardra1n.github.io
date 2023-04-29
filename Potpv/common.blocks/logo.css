@@ -28,3 +28,11 @@
     align-items: center;
     letter-spacing: 0.1em;
 }
+
+.logo_bg_white .logo__title {
+    color: #545454;
+}
+
+.logo_bg_white .logo__slogan {
+    color: #292929;
+}

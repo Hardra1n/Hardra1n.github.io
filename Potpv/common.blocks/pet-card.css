@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    row-gap: 30px;
     background-color: #FAFAFA;
 
     /* interactable */
@@ -35,7 +36,7 @@
 
 .pet-card__pet-button {
     box-sizing: border-box;
-    padding: 14px 44px;
+    padding: 13px 44px;
     border: 2px solid #F1CDB3;
     border-radius: 100px;
     background-color: #FAFAFA;
