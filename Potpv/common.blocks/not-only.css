@@ -50,13 +50,6 @@
 
     pointer-events: auto;
     cursor: pointer;
-}
-
-.not-only__content-button:hover {
-    background-color: #FDDCC4;
-}
-
-.not-only__content-button-text {
     font-family: Georgia;
     font-weight: 400;
     font-size: 17px;
@@ -67,4 +60,8 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.not-only__content-button:hover {
+    background-color: #FDDCC4;
 }

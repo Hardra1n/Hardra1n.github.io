@@ -77,12 +77,9 @@
     color: #B2B2B2;
 }
 
-.donation__link {
+.donation__credit-card {
     display: flex;
     column-gap: 15px;
-}
-
-.donation__credit-card {
     display: flex;
     justify-content: flex-start;
     padding: 10px 15px;
