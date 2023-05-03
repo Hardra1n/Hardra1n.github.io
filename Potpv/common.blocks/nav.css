@@ -57,6 +57,8 @@
 
 .nav_bg_white .nav__item_selected {
     color: #292929;
+    border-bottom: 3px solid #F1CDB3;
+    pointer-events: none;
 }
 
 @media screen and (max-width: 720px) {

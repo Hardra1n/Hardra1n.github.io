@@ -9,6 +9,7 @@
 .pets-list__wrapper {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: flex-start; */
     justify-content: space-between;
     width: auto;
     height: 100%;
@@ -21,7 +22,6 @@
 
 .pets-list__button-arrow {
     /* button_arrow */
-
 
     box-sizing: border-box;
 
@@ -78,6 +78,11 @@
     .pets-list_slider .pets-list__wrapper {
         column-gap: 40px;
     }
+
+    .pets-list__wrapper {
+        column-gap: 40px;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 404px) {
@@ -88,5 +93,17 @@
 
     .pets-list__button-arrow {
         order: 10;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .pets-list__list-item:nth-child(n + 7) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    .pets-list__list-item:nth-child(n + 4) {
+        display: none;
     }
 }
