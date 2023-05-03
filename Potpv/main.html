@@ -4,6 +4,7 @@
 <head>
     <title>Cozy House</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="PAGES/page_main.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
@@ -17,12 +18,14 @@
             </a>
             <nav class="nav header__nav">
                 <ul class="nav__item-wrapper">
-                    <li class="nav__item"><a class="nav__item-link nav__item_selected" href="#">About the shelter</a>
+                    <li class="nav__item"><a class="nav__item-link nav__item-link_selected" href="#">About the
+                            shelter</a>
                     </li>
                     <li class="nav__item"><a class="nav__item-link" href="/pets.html">Our pets</a></li>
                     <li class="nav__item"><a class="nav__item-link" href="#help">Help the shelter</a></li>
                     <li class="nav__item"><a class="nav__item-link" href="#footer">Contacts</a></li>
                 </ul>
+                <a class="nav__burger-menu" href=""></a>
             </nav>
         </header>
         <div class="not-only start-screen__not-only">
@@ -34,7 +37,10 @@
                     you will see!</p>
                 <a class="not-only__content-button" href="#pets">Make a friend</a>
             </div>
-            <img class="not-only__dog-image" src="images/start-screen-puppy.png" alt="Puppy on the picture">
+            <img class="not-only__dog-image" srcset="images/start-screen-puppy-320.png 320w,
+                    images/start-screen-puppy-768.png 768w,
+                    images/start-screen-puppy-1280.png 1280w" src="images/start-screen-puppy-1280.png"
+                alt="Puppy on the picture">
         </div>
     </section>
     <section class="about page__about">
@@ -153,14 +159,15 @@
         <div class="donation__content-wrapper">
             <img class="donation__content-image" src="images/donation-dog.png" alt="Kerllpotpv on the screen">
             <div class="donation__content">
-                <h2 class="donation__content-header">You can also <br> make a donation</h2>
+                <h2 class="donation__content-header">You can also make a donation</h2>
                 <h3 class="donation__content-subheading">Name of the bank / Type of bank account</h3>
                 <a class="donation__credit-card" href="">
                     <img class="donation__credit-card-symbol" src="images/credit-card.svg" alt="Cash please">
                     <span class="donation__credit-card-number">8380 2880 8028 8791 7435</span>
                 </a>
                 <p class="donation__content-description">Legal information and lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Maecenas a ipsum at libero sagittisdignissim sed ac diam. Praesent ultrices maximus
+                    adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices
+                    maximus
                     tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             </div>
         </div>
@@ -168,7 +175,7 @@
     <footer class="footer page__footer" id="footer">
         <div class="footer__content">
             <div class="contacts-info footer__contacts-info">
-                <h3 class="contacts-info__header">For questions <br> and suggestions</h3>
+                <h3 class="contacts-info__header">For questions and suggestions</h3>
                 <a class="contacts-info__mail" href="mailto:email@shelter.com" target="_blank">
                     <img class="contacts-info__mail-helping-image" src="images/mail.png" alt="Better then modern one">
                     <span class="contacts-info__mail-address">email@shelter.com</span>

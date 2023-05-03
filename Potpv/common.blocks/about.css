@@ -6,38 +6,33 @@
 
 
 .about__content-wrapper {
-    width: 1200px;
-    height: 408px;
-    position: relative;
-    top: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.about__pets-img {
-    margin-left: 175px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    column-gap: 120px;
+    row-gap: clamp(42px, 11vw, 80px);
 }
 
 .about__content {
-    width: 430px;
-    height: 380px;
-    margin-right: 175px;
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 430px;
+    flex: 1 1 300px;
+    display: inline-flex;
+    flex-direction: column;
     align-content: space-between;
+    row-gap: 25px;
 }
 
 .about__content-header {
-    width: 370px;
-    height: 90px;
+    max-width: 80%;
     margin: 0;
     color: #545454;
 
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: clamp(25px, 7vw, 35px);
     line-height: 130%;
 
     display: flex;
@@ -46,7 +41,6 @@
 }
 
 .about__content-description {
-    width: 100%;
     margin: 0;
     color: #4C4C4C;
     font-family: 'Arial';
@@ -57,4 +51,24 @@
 
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .about__pets-img {
+        width: clamp(260px, 79vw, 300px)
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about__content {
+        align-items: center;
+    }
+
+    .about__content-header {
+        text-align: center;
+    }
+
+    .about__content-description {
+        text-align: justify;
+    }
 }

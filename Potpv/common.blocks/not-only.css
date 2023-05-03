@@ -1,21 +1,23 @@
 .not-only {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
+    /* temp row */
 }
 
 .not-only__content {
-    width: 460px;
-    height: 322px;
+    max-width: 460px;
     position: relative;
-    top: 163px;
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 40px;
+    row-gap: 42px;
 }
 
 .not-only__content-header {
-    width: 310px;
-    height: 114px;
+    width: 80%;
     font-family: Georgia;
     font-size: 44px;
     font-weight: 400;
@@ -25,8 +27,7 @@
 }
 
 .not-only__content-description {
-    width: 460px;
-    height: 72px;
+    width: 100%;
     margin: 0;
     font-family: Arial;
     font-style: normal;
@@ -34,19 +35,18 @@
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
-    display: flex;
-    align-items: center;
 }
 
 .not-only__content-button {
+    padding: 15px 45px;
     border: 0;
+    gap: 10px;
     border-radius: 100px;
     background-color: #F1CDB3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 45px;
-    gap: 10px;
+    width: fit-content;
 
     pointer-events: auto;
     cursor: pointer;
@@ -64,4 +64,39 @@
 
 .not-only__content-button:hover {
     background-color: #FDDCC4;
+}
+
+@media screen and (max-width: 768px) {
+    .not-only {
+        row-gap: clamp(100px, 110px - 2vw, 105px);
+        flex-direction: column;
+    }
+
+    .not-only__content {
+        bottom: 0;
+        align-items: center;
+    }
+
+    .not-only__content-header {
+        align-self: flex-start;
+        font-size: clamp(25px, 8vw, 44px);
+        max-width: 80%;
+    }
+
+    .not-only__dog-image {
+        align-self: end;
+        height: max(271px, 77.2vw);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .not-only__content-header {
+        align-self: inherit;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+
+    .not-only__content-description {
+        text-align: center;
+    }
 }

@@ -15,28 +15,63 @@
 }
 
 .page__about {
-    width: 100%;
-    height: 588px;
+    margin-top: clamp(42px, 11vw, 80px);
+    margin-bottom: clamp(42px, 13.1vw, 100px);
+    padding: 0 25px;
 }
 
+
 .page__pets {
-    height: 877px;
+    /* height: 877px; */
+    box-sizing: border-box;
     width: 100%;
+    padding: clamp(42px, 11vw, 80px) clamp(10px, 3.9vw, 40px) clamp(42px, 13.1vw, 100px)
 }
 
 .page__help {
+    box-sizing: border-box;
     width: 100%;
-    height: 611px;
+    margin: clamp(42px, 11vw, 80px) 0 clamp(42px, 13.1vw, 100px);
+    padding: 0 clamp(69px, 10vw, 127px);
     display: flex;
     justify-content: center;
 }
 
 .page__donation {
+    box-sizing: border-box;
     width: 100%;
-    height: 462px;
+    padding: clamp(42px, 11vw, 80px) 19px clamp(42px, 13.1vw, 100px);
 }
 
 .page__footer {
+    box-sizing: border-box;
     width: 100%;
-    height: 350px;
+    padding: clamp(30px, 3vw, 40px) clamp(10px, 3vw, 40px) 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .page__help {
+        padding: 0 69px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .page__about {
+        margin-bottom: 42px;
+    }
+
+    .page__help {
+        margin-bottom: 42px;
+        padding: 0 15px;
+    }
+
+    /* TEMP */
+    .page__pets {
+        /* height: 785px; */
+        /* padding-bottom: ; */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

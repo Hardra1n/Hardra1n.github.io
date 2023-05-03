@@ -5,30 +5,31 @@
 }
 
 .donation__content-wrapper {
-    width: 915px;
-    height: 282px;
-
-    margin-top: 80px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
     align-items: center;
+    align-content: center;
+    row-gap: clamp(42px, 10.5vw, 60px);
+    column-gap: 30px;
 }
 
 .donation__content-image {
-    width: 505px;
-    height: 261px;
+    width: clamp(260px, 66vw, 505px);
 }
 
 .donation__content {
-    width: 380px;
-    height: 282px;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    row-gap: 20px;
 }
 
 .donation__content-header {
+    max-width: 80%;
+
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -45,6 +46,8 @@
 }
 
 .donation__content-subheading {
+
+    width: fit-content;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -68,6 +71,7 @@
     font-size: 12px;
     line-height: 18px;
     margin: 0;
+    /* max-height: clamp(280px, , 380px); */
 
     display: flex;
     align-items: center;
@@ -80,7 +84,6 @@
 .donation__credit-card {
     display: flex;
     column-gap: 15px;
-    display: flex;
     justify-content: flex-start;
     padding: 10px 15px;
     width: fit-content;
@@ -106,10 +109,49 @@
     line-height: 115%;
 
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     letter-spacing: 0.06em;
 
     /* color-dark-l */
 
     color: #545454;
+}
+
+
+@media screen and (max-width: 768px) {
+    .donation__content-header {
+        font-size: clamp(25px, 4.6vw, 35px);
+    }
+
+    .donation__credit-card-number {
+        font-size: clamp(15px, 3.5vw, 20px);
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .donation__content-header {
+        align-self: center;
+        text-align: center;
+    }
+
+    .donation__content-description {
+        text-align: justify;
+    }
+
+    .donation__content-subheading {
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+
+    .donation__credit-card {}
+
+    .donation__credit-card-number {
+        line-height: 110%;
+    }
+
+    .donation__content {
+        align-items: center;
+    }
 }

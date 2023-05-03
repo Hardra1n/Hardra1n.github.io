@@ -8,22 +8,25 @@
 }
 
 .pets__content {
-    width: 1200px;
+    /* width: 1200px; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    row-gap: 60px;
-    margin-top: 80px;
+    /* row-gap: 60px;   */
+    row-gap: clamp(42px, 7.9vw, 60px);
+    /* margin-top: 80px; */
 }
 
 .pets__header {
-    width: 400px;
+    /* width: 400px; */
     color: #545454;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: clamp(25px, 4.6vw, 35px);
     line-height: 130%;
     margin: 0;
 

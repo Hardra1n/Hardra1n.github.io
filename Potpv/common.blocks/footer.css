@@ -9,23 +9,31 @@
 }
 
 .footer__content {
-    margin-top: 40px;
-    width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: clamp(40px, 10vw, 65px);
 }
 
 .footer__contacts-info,
 .footer__location-info {
-    margin-top: 16px;
+    margin-top: clamp(0px, 10vw - 112px, 16px);
+}
+
+.footer__dog-image {
+    max-width: clamp(260px, 81.25vw, 300px)
 }
 
 .contacts-info {
-    height: 234px;
+    max-width: 280px;
+    /* height: 234px; */
+    min-height: clamp(208px, 65vw, 234px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .contacts-info__header {
@@ -33,18 +41,24 @@
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: clamp(25px, 4.5vw, 35px);
     line-height: 130%;
 
     letter-spacing: 0.06em;
 
     color: #FFFFFF;
+
+    margin-block-end: 0;
+    margin-block-start: 0;
 }
 
 .contacts-info__mail,
 .contacts-info__phone {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .contacts-info__mail-address,
@@ -65,20 +79,24 @@
 
 
 .location-info {
-    height: 234px;
+    /* height: 234px; */
     width: 302px;
+    min-height: clamp(222px, 69vw, 234px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
+    /* align-items: center; */
 
 }
 
 .location-info__header {
+    width: 90%;
     margin: 0;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: clamp(25px, 4.5vw, 35px);
     line-height: 130%;
 
     letter-spacing: 0.06em;
@@ -93,7 +111,8 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    row-gap: 32px;
+    /* row-gap: 32px; */
+    row-gap: clamp(33px, 72px - 10vw, 40px);
 }
 
 .location-info__location-link {
@@ -135,4 +154,30 @@
 .contacts-info__phone:hover .contacts-info__phone-number,
 .location-info__location-link:hover .location-info__address {
     color: #FDDCC4;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__content {
+        justify-content: center;
+        column-gap: 60px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .contacts-info__header,
+    .location-info__header {
+        text-align: center;
+        align-self: center;
+    }
+
+    .contacts-info {
+        align-items: center;
+    }
+
+    .contacts-info__mail,
+    .contacts-info__phone {
+        justify-content: center;
+        text-align: center;
+    }
 }

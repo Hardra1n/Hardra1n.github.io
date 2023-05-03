@@ -53,5 +53,40 @@
 }
 
 .pets-list_slider .pets-list__wrapper {
-    column-gap: 90px;
+    column-gap: clamp(40px, 7.1vw, 90px);
+}
+
+.pets-list_slider {
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+@media screen and (max-width: 1170px) {
+    .pets-list_slider .pets-list__list-item:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .pets-list_slider .pets-list__list-item:nth-child(n + 2) {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .pets-list_slider .pets-list__wrapper {
+        column-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    .pets-list_slider {
+        column-gap: 80px;
+        justify-content: center;
+    }
+
+    .pets-list__button-arrow {
+        order: 10;
+    }
 }

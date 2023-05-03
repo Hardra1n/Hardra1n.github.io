@@ -1,6 +1,5 @@
 .nav {
-    width: 443px;
-    height: 27px;
+    height: fit-content;
     display: inline-flex;
 }
 
@@ -8,27 +7,42 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
+    /* gap: clamp(5px, 4vw, 36px); */
+    gap: 36px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+}
+
+.nav__item {
+    flex-shrink: 0;
 }
 
 .nav__item-link {
     width: 100%;
     height: 100%;
     font-family: Arial;
+    font-style: normal;
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
+    padding-bottom: 2px;
+}
+
+.nav__burger-menu {
+    width: 30px;
+    height: 22px;
+    background-image: url(/images/Burger.svg);
+    overflow: hidden;
+    display: none;
 }
 
 .nav__item-link:hover {
     color: #FAFAFA;
 }
 
-.nav__item_selected {
+.nav__item-link_selected {
     color: #FAFAFA;
-    padding-bottom: 2px;
     border-bottom: 3px solid #F1CDB3;
     pointer-events: none;
 }
@@ -43,4 +57,15 @@
 
 .nav_bg_white .nav__item_selected {
     color: #292929;
+}
+
+@media screen and (max-width: 720px) {
+    .nav__burger-menu {
+        display: inline;
+        overflow: auto;
+    }
+
+    .nav__item-wrapper {
+        display: none;
+    }
 }
