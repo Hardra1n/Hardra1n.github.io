@@ -29,7 +29,6 @@
 }
 
 .help__help-list {
-    /* maybe remove? */
     margin: 0;
     padding: 0;
     padding-inline-start: 0px;
@@ -95,10 +94,3 @@
         font-size: clamp(25px, 4.6vw, 35px);
     }
 }
-
-/* @media screen and (max-width: 320px) {
-    .help {
-        position: relative;
-        bottom: 90px;
-    }
-} */
