@@ -34,88 +34,13 @@
     <main class="our-pets page__our-pets">
         <div class="our-pets__content">
             <h2 class="our-pets__header">Our friends who <br> are looking for a house</h2>
-            <div class="our-pets__pets-list">
+            <div class="pets-list our-pets__pets-list pets-list_paginator">
                 <ul class="pets-list__wrapper">
-                    <li class="pets-list__list-item">
-                        <div class="pet-card pets-list__pet-card">
-                            <img class="pet-card__pet-avatar" src="images/pets/pets-katrine.png"
-                                alt="Black cat Katrine">
-                            <span class="pet-card__title">Katrine</span>
-                            <button class="pet-card__pet-button">
-                                <span class="pet-card__pet-button-text">Learn more</span>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="pets-list__list-item">
-                        <div class="pet-card pets-list__pet-card">
-                            <img class="pet-card__pet-avatar" src="images/pets/pets-jennifer.png"
-                                alt="White dog Jennifer">
-                            <span class="pet-card__title">Jennifer</span>
-                            <button class="pet-card__pet-button">
-                                <span class="pet-card__pet-button-text">Learn more</span>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="pets-list__list-item">
-                        <div class="pet-card pets-list__pet-card">
-                            <img class="pet-card__pet-avatar" src="images/pets/pets-woody.png"
-                                alt="Light-brown dog Woody">
-                            <span class="pet-card__title">Woody</span>
-                            <button class="pet-card__pet-button">
-                                <span class="pet-card__pet-button-text">Learn more</span>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="pets-list__list-item">
-                        <div class="pet-card pets-list__pet-card">
-                            <img class="pet-card__pet-avatar" src="images/pets/pets-sophia.png" alt="Sophia dog">
-                            <span class="pet-card__title">Sophia</span>
-                            <button class="pet-card__pet-button">
-                                <span class="pet-card__pet-button-text">Learn more</span>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="pets-list__list-item">
-                        <div class="pet-card pets-list__pet-card">
-                            <img class="pet-card__pet-avatar" src="images/pets/pets-timmy.png" alt="Kitty cat">
-                            <span class="pet-card__title">Timmy</span>
-                            <button class="pet-card__pet-button">
-                                <span class="pet-card__pet-button-text">Learn more</span>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="pets-list__list-item">
-                        <div class="pet-card pets-list__pet-card">
-                            <img class="pet-card__pet-avatar" src="images/pets/pets-charly.png" alt="Kerllpotpv">
-                            <span class="pet-card__title">Charly</span>
-                            <button class="pet-card__pet-button">
-                                <span class="pet-card__pet-button-text">Learn more</span>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="pets-list__list-item">
-                        <div class="pet-card pets-list__pet-card">
-                            <img class="pet-card__pet-avatar" src="images/pets/pets-scarlet.png" alt="Doggy Scarlet">
-                            <span class="pet-card__title">Scarlett</span>
-                            <button class="pet-card__pet-button">
-                                <span class="pet-card__pet-button-text">Learn more</span>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="pets-list__list-item">
-                        <div class="pet-card pets-list__pet-card">
-                            <img class="pet-card__pet-avatar" src="images/pets/pets-freddie.png" alt="Lil Fred">
-                            <span class="pet-card__title">Freddie</span>
-                            <button class="pet-card__pet-button">
-                                <span class="pet-card__pet-button-text">Learn more</span>
-                            </button>
-                        </div>
-                    </li>
                 </ul>
             </div>
             <div class="our-pets__navigation">
-                <button class="our-pets__navigation-paginator our-pets__navigation-paginator_disabled">&lt;&lt;</button>
-                <button class="our-pets__navigation-paginator our-pets__navigation-paginator_disabled">&lt;</button>
+                <button class="our-pets__navigation-paginator">&lt;&lt;</button>
+                <button class="our-pets__navigation-paginator">&lt;</button>
                 <button class="our-pets__navigation-paginator our-pets__navigator-paginator_active">1</button>
                 <button class="our-pets__navigation-paginator">&gt;</button>
                 <button class="our-pets__navigation-paginator">&gt;&gt;</button>
@@ -160,6 +85,8 @@
         </div>
     </footer>
     <script src="/common.blocks/nav.js"></script>
+    <script type="module" src="/common.blocks/pet-list.js"></script>
+    <script type="module" src="/common.blocks/pet-card.js"></script>
 </body>
 
 </html>

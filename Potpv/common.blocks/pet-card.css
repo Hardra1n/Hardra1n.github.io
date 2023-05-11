@@ -61,3 +61,247 @@
 
     color: #292929;
 }
+
+.pet-card__pet-type,
+.pet-card__description,
+.pet-card__short-info-list {
+    display: none;
+}
+
+.pet-card_modal {
+    padding: 0;
+    /* width: 900px;
+    height: 500px; */
+    /* max-height: 500px; */
+    /* max-width: 900px; */
+
+    /* max-height: clamp(350px, 39vw, 500px);
+    max-width: clamp(630px, 70.3vw, 900px); */
+    max-height: clamp(350px, 39vw, 500px);
+    max-width: clamp(240px, 82.3vw, 900px);
+    /* height: fit-content; */
+    position: fixed;
+    z-index: 1;
+    border-radius: 9px;
+
+
+    overflow: hidden;
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    background-color: #FAFAFA;
+    cursor: auto;
+}
+
+.pet-card__info-wrapper {
+    box-sizing: border-box;
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 240px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: clamp(10px, 2.6vw, 50px) clamp(9px, 1.5vw, 30px) 0 clamp(10px, 1.3vw, 20px);
+}
+
+.pet-card_modal .pet-card__title {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    /* or 45px */
+
+    letter-spacing: 0.06em;
+}
+
+.pet-card_modal .pet-card__pet-type {
+    box-sizing: border-box;
+    margin-bottom: clamp(20px, 2.6vw, 40px);
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+
+    letter-spacing: 0.06em;
+}
+
+.pet-card_modal .pet-card__description {
+    box-sizing: border-box;
+    margin-bottom: clamp(20px, 2.6vw, 40px);
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(13px, 1.5vw, 15px);
+    line-height: 110%;
+    /* or 17px */
+
+    letter-spacing: 0.06em;
+}
+
+.pet-card__short-list-item::before {
+    content: "•";
+    color: #F1CDB3;
+    padding-right: 10px;
+}
+
+.pet-card__cancel-button {
+    position: relative;
+    z-index: 10;
+    /* for 1280px 465 277,1*/
+    /* left: 36.4vw;   
+    bottom: 31.6vh; 21.6vw*/
+    /* for 768px 332 203,5*/
+    /* left: 43.3vw;
+    bottom: 23.2vh; 26.4vw*/
+    /* for 320px 123.2 201,705*/
+    /* left: 38.5vw;
+    bottom: 25.5vh; 62.1*/
+
+    left: clamp(332px, 43vw, 465px);
+    bottom: clamp(203px, 21.6vw, 277px);
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background: transparent;
+    background-image: url("/images/cross.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.pet-card__cancel-button:hover {
+    background-color: #F1CDB3;
+}
+
+/* .pet-card__short-list-item {
+    padding-left: 10px;
+} */
+
+.pet-card_modal .pet-card__short-info-list {
+    box-sizing: border-box;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    gap: clamp(6px, 1vw, 12px);
+    /* identical to box height, or 17px */
+
+    letter-spacing: 0.06em;
+
+    color: #000000;
+}
+
+
+
+.pet-card_modal .pet-card__pet-avatar {
+    height: 100%;
+}
+
+.pet-card__background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(41, 41, 41, 0.6);
+    z-index: 1;
+}
+
+.pet-card_modal .pet-card__pet-button {
+    display: none;
+}
+
+.pet-card_modal .pet-card__pet-type,
+.pet-card_modal .pet-card__description,
+.pet-card_modal .pet-card__short-info-list {
+    display: flex;
+}
+
+@media screen and (min-width: 1280px) {
+    .pet-card_modal .pet-card__info-wrapper {
+        padding: 50px 20px 0px 30px;
+    }
+
+    .pet-card_modal .pet-card__description {
+        margin-bottom: 40px;
+    }
+
+    .pet-card_modal .pet-card__pet-type {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pet-card_modal .pet-card__info-wrapper {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .pet-card_modal .pet-card__description {
+        margin-bottom: 20px;
+    }
+
+    .pet-card_modal .pet-card__pet-type {
+        margin-bottom: 20px;
+    }
+
+    .pet-card__cancel-button {
+        /* for 1280px 465 277,1*/
+        /* left: 36.4vw;   
+            bottom: 31.6vh; 21.6vw*/
+        /* for 768px 332 203,5*/
+        /* left: 43.3vw;
+            bottom: 23.2vh; 26.4vw*/
+        /* for 320px 123.2 201,705*/
+        /* left: 38.5vw;
+            bottom: 25.5vh; 62.1*/
+        left: clamp(124px, 43.3vw, 332px);
+        bottom: clamp(201px, 25vw, 203px);
+        ;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .pet-card_modal .pet-card__pet-avatar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .pet-card__cancel-button {
+        left: 124px;
+    }
+
+    .pet-card_modal .pet-card__info-wrapper {
+        align-items: center;
+        max-width: 240px;
+        max-height: 341px;
+    }
+
+    .pet-card_modal .pet-card__title {
+        text-align: center;
+    }
+
+    .pet-card_modal .pet-card__pet-type {
+        text-align: center;
+    }
+
+    .pet-card_modal .pet-card__description {
+        text-align: justify;
+    }
+}

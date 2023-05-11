@@ -17,7 +17,16 @@
     list-style-type: none;
     column-gap: 40px;
     row-gap: 30px;
+    overflow: hidden;
 }
+
+
+.pets-list__list-item {
+    position: relative;
+    left: 0;
+    transition: 0s;
+}
+
 
 .pets-list__button-arrow {
     /* button_arrow */

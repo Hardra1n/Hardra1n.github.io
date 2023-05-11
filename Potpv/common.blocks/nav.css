@@ -61,9 +61,7 @@
 .nav_side-viewed {
     box-sizing: border-box;
     height: 100%;
-    /* width: 320px; */
     width: 0px;
-    /* padding: 45px 20px; */
     padding: 45px 0;
     position: fixed;
     z-index: 1;
