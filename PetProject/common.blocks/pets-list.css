@@ -9,7 +9,7 @@
 .pets-list__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: auto;
     height: 100%;
     padding: 0;

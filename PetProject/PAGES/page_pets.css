@@ -1,7 +1,7 @@
 @import url("../default.css");
-@import url("/common.blocks/header.css");
-@import url("/common.blocks/our-pets.css");
-@import url("/common.blocks/footer.css");
+@import url("../common.blocks/header.css");
+@import url("../common.blocks/our-pets.css");
+@import url("../common.blocks/footer.css");
 
 .page {
     margin: 0;

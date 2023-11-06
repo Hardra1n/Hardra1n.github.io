@@ -104,7 +104,8 @@ class PetListHtmlWriter {
 
 class PetDataProvider {
     static async getPetsData() {
-        const _PET_JSON_LOCATION = "http://127.0.0.1:5500/pets.json";
+        
+        const _PET_JSON_LOCATION = "/PetProject/pets.json";
 
         const request = new Request(_PET_JSON_LOCATION);
 
